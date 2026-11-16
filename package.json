@@ -1,0 +1,14 @@
+{
+  "name": "ampa-brandbook",
+  "private": true,
+  "scripts": {
+    "build": "tailwindcss -i ./styles.css -o ./dist/tailwind.css --minify && node scripts/copy-vendor.mjs",
+    "check": "node --check dist/app.js"
+  },
+  "devDependencies": {
+    "tailwindcss": "3.4.17"
+  },
+  "dependencies": {
+    "gsap": "3.14.2"
+  }
+}
